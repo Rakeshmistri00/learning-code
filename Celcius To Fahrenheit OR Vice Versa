@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main() {
+    float temp;
+    char type;
+    printf("Enter temperature (C for Celsius, F for Fahrenheit): ");
+    scanf("%f %c", &temp, &type);
+    if (type == 'C' || type == 'c')
+        printf("Fahrenheit = %.2f\n", (temp * 9/5) + 32);
+    else if (type == 'F' || type == 'f')
+        printf("Celsius = %.2f\n", (temp - 32) * 5/9);
+    else
+        printf("Invalid input\n");
+    return 0;
+}
