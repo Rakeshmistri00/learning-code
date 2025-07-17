@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() {
+    float length, breadth, area, perimeter;
+
+    printf("Enter length in meters: ");
+    scanf("%f", &length);
+    printf("Enter breadth in meters: ");
+    scanf("%f", &breadth);
+
+    area = length * breadth;
+    perimeter = 2 * (length + breadth);
+
+    printf("Area = %.2f sq.m\n", area);
+    printf("Perimeter = %.2f m\n", perimeter);
+
+    if (length == breadth) {
+        printf("It is a Square.\n");
+    } else {
+        printf("It is a Rectangle.\n");
+    }
+
+    return 0;
+}
