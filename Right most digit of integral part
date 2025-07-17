@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    float num;
+    int integralPart, rightmostDigit;
+
+    printf("Enter a floating-point number: ");
+    scanf("%f", &num);
+
+    integralPart = (int)num;
+    rightmostDigit = integralPart % 10;
+
+    printf("Rightmost digit of the integral part: %d\n", rightmostDigit);
+
+    return 0;
+}
